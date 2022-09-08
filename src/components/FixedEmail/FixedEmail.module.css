@@ -1,0 +1,42 @@
+.fixedEmail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 2.5%;
+  bottom: 0;
+  z-index: 42;
+}
+
+.fixedEmail a {
+  margin-bottom: 10px;
+  color: var(--brown-red);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.25s linear;
+}
+
+.fixedEmail a:hover {
+  transform: translateY(-10px);
+}
+
+.fixedEmail a h1 {
+  transform: rotate(90deg);
+  line-height: 0;
+  font-size: 10px;
+  font-family: "Lora", sans-serif;
+}
+
+.line {
+  width: 1px;
+  height: 10rem;
+  background-color: var(--brown-red);
+}
+
+@media (max-width: 770px) {
+  .fixedEmail {
+    display: none;
+  }
+}

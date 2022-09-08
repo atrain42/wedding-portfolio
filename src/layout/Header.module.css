@@ -1,0 +1,68 @@
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-10px) scale(2);
+  z-index: -1;
+}
+
+.headerText {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--grey-color);
+}
+
+.headerText h1 {
+  font-family: "Lora", sans-serif;
+  font-size: 55px;
+  line-height: 0;
+  margin-top: 55px;
+}
+
+.headerText h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.headerText button {
+  font-family: "Lora", sans-serif;
+  background-color: transparent;
+  border: 1px solid var(--grey-color);
+  color: var(--grey-color);
+  padding: 10px 25px;
+  margin-top: 75px;
+  box-shadow: 0px 0px 10px 3px rgba(46, 46, 46, 0.552);
+}
+
+.headerHeading {
+  display: flex;
+  align-items: center;
+}
+
+.headerHeading img {
+  height: 25px;
+  width: 25px;
+  margin: 0 20px;
+  box-shadow: 0px 0px 10px 3px rgba(46, 46, 46, 0.362);
+}
+
+.linebreak {
+  width: 12.5rem;
+  height: 0.5px;
+  background-color: rgb(200, 200, 200);
+  box-shadow: 0px 0px 10px 3px rgba(46, 46, 46, 0.362);
+}

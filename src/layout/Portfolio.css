@@ -1,0 +1,35 @@
+.portfolio {
+  /* padding: 300px 0; */
+  /* padding-right: 100px;
+  padding-left: 100px; */
+
+  height: 100vh;
+
+  position: relative;
+  background-color: white;
+  transform-style: preserve-3d;
+  transform: translateZ(-10px) scale(2);
+  z-index: -1;
+}
+
+.portfolioGrid {
+  height: 100vh;
+  padding-top: 200px;
+  padding-bottom: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 700px));
+  margin: 0 auto;
+  width: 85vw;
+}
+
+.img1 {
+  background-image: url(../img/engagement.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url(../img/wedding.jpg);
+  background-position: center;
+  background-size: cover;
+}
