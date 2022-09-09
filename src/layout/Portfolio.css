@@ -1,11 +1,8 @@
 .portfolio {
-  height: 100vh;
-
   position: relative;
-  transform-style: preserve-3d;
-  transform: translateZ(-10px) scale(2);
-  z-index: -1;
-  margin-bottom: 100vh;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  z-index: 4;
 }
 
 .portfolioText {
@@ -37,7 +34,6 @@
 
 .portfolioGrid {
   height: 100vh;
-  padding-top: 200px;
 
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 700px));

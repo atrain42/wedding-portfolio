@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
 
 const AnimatedTextWord = ({ text }) => {
-  const words = text.split(" ");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
+  const words = text.split(" ");
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
@@ -20,6 +23,7 @@ const AnimatedTextWord = ({ text }) => {
         type: "spring",
         damping: 12,
         stiffness: 100,
+        duration: 4,
       },
     },
     hidden: {
@@ -35,10 +39,11 @@ const AnimatedTextWord = ({ text }) => {
 
   return (
     <motion.div
-      style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
+      style={{ display: "flex" }}
       variants={container}
       initial="hidden"
-      animate="visible"
+      animate={isInView ? "visible" : "hidden"}
+      ref={ref}
     >
       {words.map((word, index) => (
         <motion.span

@@ -1,10 +1,9 @@
 import "./Testimonials.css";
-import { Review, Footer } from "../components";
+import { Footer } from "../components";
 
 const Testimonials = () => {
   return (
     <section className="testimonials">
-      <Review />
       <Footer />
     </section>
   );

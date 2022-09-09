@@ -27,13 +27,6 @@ const NavLinks = (props) => {
       <motion.li
         initial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.2 }}
-      >
-        Portfolio
-      </motion.li>
-      <motion.li
-        initial={animateFrom}
-        animate={animateTo}
         transition={{ delay: 0.3 }}
       >
         <Link
