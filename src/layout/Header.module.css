@@ -26,7 +26,7 @@
 
 .headerText h1 {
   font-family: "Lora", sans-serif;
-  font-size: clamp(33px, 8vw, 55px);
+  font-size: clamp(27.5px, 8vw, 55px);
   /* font-size: 55px; */
   line-height: 0;
   margin-top: 55px;
@@ -35,7 +35,7 @@
 
 .headerText h2 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(17px, 8vw, 22px);
+  font-size: clamp(15px, 4vw, 22px);
   font-weight: 300;
 }
 
@@ -71,5 +71,16 @@
 @media (max-width: 625px) {
   .linebreak {
     width: 8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .linebreak {
+    width: 6rem;
+  }
+
+  .headerHeading img {
+    height: 17.5px;
+    width: 17.5px;
   }
 }
