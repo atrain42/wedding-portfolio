@@ -79,6 +79,11 @@
     width: 6rem;
   }
 
+  .headerText {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   .headerHeading img {
     height: 17.5px;
     width: 17.5px;
