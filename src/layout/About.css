@@ -134,3 +134,35 @@ a:hover::before {
     padding-right: 75px;
   }
 }
+
+@media (max-width: 500px) {
+  .aboutContent {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .aboutText p {
+    width: 90vw;
+  }
+
+  .aboutText h1 {
+    font-size: 30px;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutContent img {
+    height: 400px;
+    position: absolute;
+    bottom: -5%;
+    left: 5%;
+  }
+
+  .imageContainer {
+    position: relative;
+    height: 400px;
+    width: 250px;
+    background-color: var(--brown-red);
+    margin-right: 40px;
+  }
+}

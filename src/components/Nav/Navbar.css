@@ -72,19 +72,6 @@
   margin-right: 2rem;
 }
 
-.dd {
-  display: none;
-  width: 400px;
-  height: 200px;
-  background-color: red;
-  z-index: 200;
-  position: absolute;
-}
-
-.doob:hover dd {
-  display: block;
-}
-
 @media (max-width: 990px) {
   .nav .Navigation {
     display: none;

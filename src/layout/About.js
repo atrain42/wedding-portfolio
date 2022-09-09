@@ -12,7 +12,7 @@ const About = () => {
         <div className="aboutText">
           <h1>Capturing your wedding memories</h1>
           <p>
-            Hi there, As absolute is by amounted repeated entirely ye returned.
+            Hi there, As absolute i by amounted repeated entirely ye returned.
             These ready timed enjoy might sir yet one since. Years drift never
             if could forty being no. On estimable dependent as suffering on my.
             Rank it long have sure in room what as he. Possession travelling
