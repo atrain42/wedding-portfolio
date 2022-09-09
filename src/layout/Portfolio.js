@@ -1,4 +1,5 @@
 import "./Portfolio.css";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
@@ -10,6 +11,7 @@ const Portfolio = () => {
             Want to to take engagements photos with your partner? I'm your girl.
             Check out some of my work and lets get to work!
           </p>
+          <Link to="/portfolio">See my work</Link>
         </div>
         <div className="img1"></div>
         <div className="img2"></div>
@@ -19,6 +21,7 @@ const Portfolio = () => {
             Let me capture the beautiful moments of your big day! I will help
             you remember your big day forever by capturing timeless photos
           </p>
+          <Link to="/portfolio">See my work</Link>
         </div>
       </div>
     </section>

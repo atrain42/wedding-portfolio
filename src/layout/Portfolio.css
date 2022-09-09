@@ -5,6 +5,21 @@
   z-index: 4;
 }
 
+.portfolio a {
+  text-decoration: none;
+  color: var(--brown-red);
+  font-family: "Lora", sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid var(--text-black);
+  margin-top: 30px;
+  transition: all 0.25s;
+}
+
+.portfolio a:hover {
+  border-radius: 20px;
+}
+
 .portfolioText {
   display: flex;
   flex-direction: column;
@@ -21,10 +36,15 @@
   padding-left: 50px;
 }
 
+.portfolioText-deuce p {
+  text-align: right;
+}
+
 .portfolio h1 {
   font-family: "Lora", sans-serif;
   font-size: 44px;
   color: var(--brown-red);
+  line-height: 0;
 }
 
 .portfolio p {

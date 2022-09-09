@@ -1,4 +1,5 @@
-import { Header, About, Portfolio, Testimonials } from "../layout";
+import { Header, About, Portfolio } from "../layout";
+import Questions from "../components/accordion/Questions";
 
 const Home = () => {
   return (
@@ -6,7 +7,7 @@ const Home = () => {
       <Header />
       <About />
       <Portfolio />
-      <Testimonials />
+      <Questions />
     </>
   );
 };

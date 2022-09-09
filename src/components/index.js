@@ -6,3 +6,5 @@ export { default as Reviews } from "../components/Reviews/Reviews";
 export { default as Footer } from "./Footer/Footer";
 export { default as PortfolioHeading } from "./PortfolioHeading/PortfolioHeading";
 export { default as AnimatedTextWord } from "./AnimatedTextWord/AnimatedTextWord";
+export { default as Questions } from "./accordion/Questions";
+export { default as SingleQuestion } from "./accordion/SingleQuestion";

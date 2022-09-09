@@ -1,0 +1,91 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 100%;
+  margin: 5rem auto;
+  background: #f5f5f5;
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  max-width: var(--fixed-width);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 2rem;
+}
+.container h3 {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.question {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--text-black);
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.question h4 {
+  text-transform: none;
+  line-height: 1.5;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  color: var(--text-black);
+}
+
+.question p {
+  color: var(--text-black);
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  animation: appear 1s linear;
+  font-family: "Inter", serif;
+  font-size: 17.5px;
+  padding: 1rem 0;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.question header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question header h4 {
+  margin-bottom: 0;
+}
+.btn {
+  background: transparent;
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  background: var(--clr-grey-special);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--text-black);
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
+  min-width: 2rem;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .question h4 {
+    font-size: 17px;
+  }
+
+  .question p {
+    font-size: 14px;
+  }
+}
