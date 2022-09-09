@@ -1,0 +1,138 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 300px;
+  padding-bottom: 75px;
+}
+
+.footerbreak {
+  width: 50vw;
+  height: 0.5px;
+  position: relative;
+  background-color: var(--brown-red);
+  box-shadow: 0px 0px 10px 3px rgba(101, 101, 101, 0.165);
+  margin-bottom: 50px;
+}
+.footer h1 {
+  font-size: 33px;
+  font-family: "Lora", sans-serif;
+  color: black;
+  line-height: 0;
+}
+.footer h2 {
+  font-size: 15px;
+  font-family: "Lora", sans-serif;
+  color: var(--brown-red);
+  line-height: 0;
+}
+
+.footer p {
+  font-size: var(--font-size);
+  font-family: "Inter", sans-serif;
+  color: var(--text-black);
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contactBtn {
+  text-decoration: none;
+  font-size: 19px;
+  border: 1px solid black;
+  color: black;
+  font-family: "Lora", sans-serif;
+  padding: 12px 24px;
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 2px rgba(44, 44, 44, 0.147);
+  position: relative;
+}
+
+.dot {
+  height: 32px;
+  width: 32px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.copyright h1 {
+  font-size: 1.15rem;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 1.3;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  white-space: nowrap;
+  margin-top: 3rem;
+}
+
+.footerLinks {
+  display: none;
+}
+
+.mid {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.farright {
+  margin-left: 3rem;
+}
+
+@media (max-width: 770px) {
+  .footerLinks {
+    display: flex;
+  }
+}
+
+@media (max-width: 675px) {
+  .footer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .footer p {
+    font-size: 1.35rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .copyright {
+    margin-bottom: 1rem;
+  }
+  .copyright h1 {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .copyLine {
+    width: 7.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .copyright h1 {
+    font-size: 1rem;
+  }
+
+  .copyLine {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .copyLine {
+    width: 3rem;
+  }
+}

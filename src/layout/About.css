@@ -1,5 +1,5 @@
 .about {
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgb(227, 221, 208);
   z-index: 5;
   display: flex;
@@ -73,4 +73,64 @@
 
 a:hover::before {
   transform: scaleX(1);
+}
+
+@media (max-width: 1150px) {
+  .aboutContent img {
+    height: 500px;
+    position: absolute;
+    bottom: -5%;
+    left: 5%;
+  }
+
+  .imageContainer {
+    position: relative;
+    height: 500px;
+    width: 300px;
+    background-color: var(--brown-red);
+    margin-right: 40px;
+  }
+
+  .aboutText h1 {
+    font-size: 40px;
+    width: 400px;
+  }
+
+  .aboutText {
+    width: 400px;
+  }
+
+  .aboutText p {
+    color: var(--text-black);
+    font-size: 17px;
+    border-top: 1px solid var(--brown-red);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .aboutText a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutContent {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 150px;
+  }
+  .aboutText {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 770px) {
+  .aboutContent {
+    padding-left: 50px;
+    padding-right: 75px;
+  }
 }

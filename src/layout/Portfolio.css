@@ -1,23 +1,48 @@
 .portfolio {
-  /* padding: 300px 0; */
-  /* padding-right: 100px;
-  padding-left: 100px; */
-
   height: 100vh;
 
   position: relative;
-  background-color: white;
   transform-style: preserve-3d;
   transform: translateZ(-10px) scale(2);
   z-index: -1;
+  margin-bottom: 100vh;
+}
+
+.portfolioText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.portfolioText-deuce {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.portfolio h1 {
+  font-family: "Lora", sans-serif;
+  font-size: 44px;
+  color: var(--brown-red);
+}
+
+.portfolio p {
+  color: var(--text-black);
+  font-size: var(--font-size);
 }
 
 .portfolioGrid {
   height: 100vh;
   padding-top: 200px;
-  padding-bottom: 900px;
+
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 700px));
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b" "c d";
   margin: 0 auto;
   width: 85vw;
 }
@@ -32,4 +57,32 @@
   background-image: url(../img/wedding.jpg);
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 875px) {
+  .portfolioGrid {
+    grid-template-columns: repeat(1, minmax(250px, 700px));
+    grid-template-rows: 1fr;
+    grid-template-areas: "a" "b" "d" "c";
+  }
+
+  .img1 {
+    height: 300px;
+  }
+
+  .img2 {
+    display: none;
+  }
+
+  .portfolioText {
+    padding-right: 0px;
+  }
+
+  .portfolioText-deuce {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }

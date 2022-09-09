@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const NavLinks = (props) => {
@@ -14,7 +14,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.1 }}
       >
         <Link
-          to="about"
+          to="/about"
           spy={true}
           smooth={true}
           offset={50}
@@ -29,16 +29,7 @@ const NavLinks = (props) => {
         animate={animateTo}
         transition={{ delay: 0.2 }}
       >
-        <Link
-          to="process"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-          onClick={() => props.isMobile && props.closeMobileMenu()}
-        >
-          Process
-        </Link>
+        Portfolio
       </motion.li>
       <motion.li
         initial={animateFrom}

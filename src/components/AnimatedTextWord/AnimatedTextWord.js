@@ -1,11 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
 
 const AnimatedTextWord = ({ text }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
   const words = text.split(" ");
 
   const container = {
@@ -43,19 +39,14 @@ const AnimatedTextWord = ({ text }) => {
       variants={container}
       initial="hidden"
       animate="visible"
-      ref={ref}
     >
       {words.map((word, index) => (
         <motion.span
           variants={child}
-          style={{
-            transform: isInView ? "none" : "marginRight(4px)",
-            // opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 4s",
-          }}
+          style={{ marginRight: "5px" }}
           key={index}
         >
-          &nbsp;{word}
+          {word}
         </motion.span>
       ))}
     </motion.div>
