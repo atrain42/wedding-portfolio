@@ -26,7 +26,7 @@
 
 .headerText h1 {
   font-family: "Lora", sans-serif;
-  font-size: clamp(27.5px, 8vw, 55px);
+  font-size: clamp(22.5px, 8vw, 55px);
   /* font-size: 55px; */
   line-height: 0;
   margin-top: 55px;
@@ -80,8 +80,9 @@
   }
 
   .headerText {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
   }
 
   .headerHeading img {
